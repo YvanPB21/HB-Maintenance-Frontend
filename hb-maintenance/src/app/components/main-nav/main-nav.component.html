@@ -1,0 +1,25 @@
+<div class="example-container" >
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="example-app-name" routerLink="/posts" style="cursor: pointer;">Dopta</h1>
+    <span class="material-icons" routerLink="/userprofile" style="cursor: pointer;" (click)="goToProfile()">account_circle</span>
+<!--    <button mat-button style="cursor: pointer; margin-left: auto" *ngIf="authService.loggedIn()" (click)="logout()" >LogOut</button>-->
+  </mat-toolbar>
+  <mat-sidenav-container class="example-sidenav-container">
+    <mat-sidenav #snav>
+      <mat-nav-list >
+        <a mat-list-item class="nav-link" routerLink="/posts" (click)="snav.toggle()">Inicio</a>
+        <a mat-list-item class="nav-link"  (click)="goToProfile()">Mi Perfil</a>
+        <a mat-list-item class="nav-link" routerLink="/publish" (click)="snav.toggle()">Publicar</a>
+        <a mat-list-item class="nav-link" routerLink="/my-posts" (click)="snav.toggle()">Mis Servicios</a>
+        <a mat-list-item class="nav-link" routerLink="/about-us" (click)="snav.toggle()">Acerca de H&B Maintenance</a>
+
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
