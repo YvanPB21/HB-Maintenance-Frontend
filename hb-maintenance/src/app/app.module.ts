@@ -13,13 +13,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {RouterModule} from '@angular/router';
+import { ProfileComponent } from './views/profile/profile.component';
+import { AboutUsComponent } from './views/about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServiceComponent,
     ServicesComponent,
-    MainNavComponent
+    MainNavComponent,
+    ProfileComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

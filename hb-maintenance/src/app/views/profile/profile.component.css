@@ -1,0 +1,39 @@
+.example-card {
+  width: 50%;
+}
+
+.image {
+  height: 50%;
+  width: 50%;
+  background-size: cover;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.example-card2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  height: 100%;
+}
+
+.mat-card {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.title {
+  font-size: 26px;
+}
+
+.content {
+  font-size: 16px;
+  text-align: justify;
+}
