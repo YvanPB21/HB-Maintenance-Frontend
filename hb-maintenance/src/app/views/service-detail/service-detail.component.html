@@ -1,0 +1,42 @@
+<div align="center">
+  <mat-card class="card">
+    <mat-card-title align="center">{{service?.name}}</mat-card-title>
+    <img mat-card-image [src]="service?.pet.image_url">
+    <mat-card-subtitle align="left">
+      <h2>
+        Publicante: {{service?.poster.names}} {{service?.poster.last_names}}
+        <button mat-button color="primary" (click)="goToProfile(service?.poster.id)">Visit Profile</button>
+      </h2>
+
+    </mat-card-subtitle>
+    <mat-card-content>
+      <p align="justify">
+        {{service?.description}}
+      </p>
+      <div align="center">
+        <div class="carac">
+          <span class="material-icons icon">straighten</span>{{service?.pet.size.name}}
+        </div>
+        <div class="carac">
+          <span class="material-icons icon">calendar_today</span>{{service?.pet.date_of_birth | date:'shortDate'}}
+        </div>
+        <div class="carac">
+          <span class="material-icons icon">pets</span>{{service?.pet.species.name}}
+        </div>
+        <div class="carac">
+          <span class="material-icons">thumb_up_alt</span>{{likes}}
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+<!--  Comments -->
+<!--  <mat-card class="containercomm">
+    <mat-card-title>Comments</mat-card-title>
+    <mat-card class="com" *ngFor="let comment of comments" >
+      <mat-card-content>{{comment?.content}}</mat-card-content>
+    </mat-card>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="openDialog()">Comentar</button>
+    </mat-card-actions>
+  </mat-card>-->
+</div>

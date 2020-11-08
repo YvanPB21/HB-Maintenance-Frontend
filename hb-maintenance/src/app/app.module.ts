@@ -15,6 +15,7 @@ import {MatListModule} from '@angular/material/list';
 import {RouterModule} from '@angular/router';
 import { ProfileComponent } from './views/profile/profile.component';
 import { AboutUsComponent } from './views/about-us/about-us.component';
+import { ServiceDetailComponent } from './views/service-detail/service-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AboutUsComponent } from './views/about-us/about-us.component';
     ServicesComponent,
     MainNavComponent,
     ProfileComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ServiceDetailComponent
   ],
   imports: [
     BrowserModule,
